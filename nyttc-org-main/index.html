@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <title>National Youth & Technical Training Center</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+    </style>
+    <script>
+        // Testimonial Section
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length } for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; } for
+                (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }
+            slides[slideIndex - 1].style.display = "block"; dots[slideIndex - 1].className += " active";
+        }
+// Testimonial Section
+
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="top-header">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/National Youth _ Technical Training Center-logo.png" alt="" class="logo-img">
+                    <h1>National Youth & Technical Training Center <br> জাতীয় যুব ও কারিগরী প্রশিক্ষণ কেন্দ্র</h1>
+                </div>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Home">Courses</a></li>
+                    <li><a href="#Home">Admission</a></li>
+                    <li><a href="#Home">Result</a></li>
+                    <li><a href="#Home">Certificate</a></li>
+                    <li><a id="notice-btn" href="#Home">Notice</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section>
+        <div class="top-banner">
+            <!-- <img class="top-banner" src="images/top-banner.jpg" alt=""> -->
+            <h1>LOOKING FOR BEST TRAINING COURSE <br><b><span
+                        style="background-color: #06031b; color: #fff; border-radius: 5px; padding: 2px 5px;">IN
+                        BANGLADESH?</span></b>
+            </h1>
+            <p>We're provide top quality IT course with value of money!</p>
+            <a class="join-btn" href="">Join Now</a>
+        </div>
+    </section>
+    <section>
+        <div class="cat-card">
+            <a id="soft-skill" class="cat-box" href="">
+                <div>
+                    <img src="" alt="">
+                    <h3>Soft Skill</h3>
+                </div>
+            </a>
+            <a class="cat-box" href="">
+                <div>
+                    <img src="" alt="">
+                    <h3>Technical Skill</h3>
+                </div>
+            </a>
+            <a id="baking-cooking" class="cat-box" href="">
+                <div>
+                    <img src="" alt="">
+                    <h3>Baking & Cooking</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="course-section">
+        <div class="course-heading">
+            <h1>Our Popular Courses</h1>
+        </div>
+        <div class="courses-1">
+            <div class="graphics course-width">
+                <img class="zoom" src="images/graphics-design.png" alt="">
+                <h1>Professional Graphics Design</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi?</p>
+                <a class="link-btn" href="pgd.html">Course Outline</a>
+            </div>
+            <div class="Web Design & Development course-width">
+                <img class="zoom" src="images/graphics-design.png" alt="">
+                <h1>Complete Web Development</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi?</p>
+                <a class="link-btn" href="wdd.html">Course Outline</a>
+            </div>
+            <div class="digital-marketing course-width">
+                <img class="zoom" src="images/graphics-design.png" alt="">
+                <h1>Full Stack Digital Marketing</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi?</p>
+                <a class="link-btn" href="dm.html">Course Outline</a>
+            </div>
+        </div>
+        <div class="courses-2">
+            <div class="graphics course-width">
+                <img src="images/graphics-design.png" alt="">
+                <h1>Office Advance Course</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi?</p>
+                <a class="link-btn" href="aom.html">Course Outline</a>
+            </div>
+            <div class="Web Design & Development course-width">
+                <img src="images/graphics-design.png" alt="">
+                <h1>Social Media Marketing</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi?</p>
+                <a class="link-btn" href="smm.html">Course Outline</a>
+            </div>
+            <div class="digital-marketing course-width">
+                <img src="images/graphics-design.png" alt="">
+                <h1>Spoken English</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi?</p>
+                <a class="link-btn" href="se.html">Course Outline</a>
+            </div>
+        </div>
+        <div class="more">
+            <p><a class="more-courses" href="#">See All Course</a></p>
+        </div>
+    </section>
+
+    <section class="mv-sec">
+        <h1 style="font-size: 40px;">Our Mission & Vision</h1>
+        <div class="mv">
+            <div class="mv-half">
+                <h3>Mission</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi dolorem eius suscipit
+                    mollitia sequi magnam veniam fugiat exercitationem, nam temporibus distinctio itaque deleniti
+                    doloremque accusantium. Harum sapiente saepe, quidem dolorum voluptatem fuga provident nulla a,
+                    unde, laborum esse? Facilis.</p>
+                <h3>Vision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi dolorem eius suscipit
+                    mollitia sequi magnam veniam fugiat exercitationem, nam temporibus distinctio itaque deleniti
+                    doloremque accusantium. Harum sapiente saepe, quidem dolorum voluptatem fuga provident nulla a,
+                    unde, laborum esse? Facilis.</p>
+            </div>
+            <div class="mv-half">
+                <img src="images/National Youth _ Technical Training Center-logo.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="md-sec">
+        <h1 style="font-size: 40px; margin-bottom: 40px;">Our Honorable Managing Director Says</h1>
+        <div class="md">
+            <div class="md-half">
+                <img src="images/download-removebg-preview.png" alt="">
+            </div>
+            <div class="md-half">
+                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi dolorem eius suscipit
+                    mollitia sequi magnam veniam fugiat exercitationem, nam temporibus distinctio itaque deleniti
+                    doloremque accusantium. Harum sapiente saepe, quidem dolorum voluptatem fuga provident nulla a,
+                    unde, laborum esse? Facilis.</q>
+                <img class="md-signature" src="images/signature" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- meet the team -->
+    <section class="team">
+        <h1 class="mb-0">Meet Our Team</h1>
+        <div class="main">
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/download-removebg-preview.png">
+                </div>
+                <div class="caption">
+                    <h3>Md. Saiful Islam</h3>
+                    <p>Graphic Design</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/download-removebg-preview.png">
+                </div>
+                <div class="caption">
+                    <h3>Tania Akter</h3>
+                    <p>Graphic Design</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/download-removebg-preview.png">
+                </div>
+                <div class="caption">
+                    <h3>Sinsia</h3>
+                    <p>Microsoft Office</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/download-removebg-preview.png">
+                </div>
+                <div class="caption">
+                    <h3>Koly</h3>
+                    <p>English</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-0">
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/download-removebg-preview.png">
+                </div>
+                <div class="caption">
+                    <h3>Md. Saiful Islam</h3>
+                    <p>Graphic Design</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/download-removebg-preview.png">
+                </div>
+                <div class="caption">
+                    <h3>Tania Akter</h3>
+                    <p>Graphic Design</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/download-removebg-preview.png">
+                </div>
+                <div class="caption">
+                    <h3>Sinsia</h3>
+                    <p>Microsoft Office</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/download-removebg-preview.png">
+                </div>
+                <div class="caption">
+                    <h3>Koly</h3>
+                    <p>English</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial">
+        <h1 style="font-size: 40px; text-align: center;">Student's Testimonial</h1>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+                <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                <p class="author">- John Keats</p>
+            </div>
+
+            <div class="mySlides">
+                <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                <p class="author">- Ernest Hemingway</p>
+            </div>
+
+            <div class="mySlides">
+                <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                <p class="author">- Thomas A. Edison</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <!-- <hr> -->
+    <section class="semi-footer">
+        <div class="address">
+            <h4 style="margin-bottom: 20px;">Address</h4>
+            <ul>
+                <i class="fa-solid fa-location-dot"></i>
+                <li style="margin-top: 10px;">Shonir Akhra<br>Barnamala School Road<br>
+                    Jatrabari, Dhaka-1236</li>
+                <br>
+                <i class="fa-solid fa-phone"></i>
+                <li>016 8986 0198</li>
+                <li>017 1073 3525</li>
+                <br>
+                <i class="fa-solid fa-envelope"></i>
+                <li>nyttcorg@gmail.com</li>
+                <li>admin@nyttc.org</li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2589770134878!2d90.4467014500153!3d23.702444096449273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9cbbd45379f%3A0x7e3efacf50aa13ce!2sNational%20Youth%20%26%20Technical%20Training%20Center!5e0!3m2!1sen!2sbd!4v1673104901639!5m2!1sen!2sbd"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="important-links">
+            <h4>Important Links</h4>
+            <ul>
+                <a class="imp-links" href="#">
+                    <li>About Us</li>
+                </a>
+
+                <a class="imp-links" href="">
+                    <li>Privacy Policy</li>
+                </a>
+                <a class="imp-links" href="">
+                    <li>Terms & Conditions</li>
+                </a>
+
+                <a class="imp-links" href="">
+                    <li>Mentors</li>
+                </a>
+                <a class="imp-links" href="">
+                    <li>Gallery</li>
+                </a>
+                <a class="imp-links" href="">
+                    <li>FAQ</li>
+                </a>
+            </ul>
+        </div>
+        <div class="social-media-links">
+            <h4>Social Media Links</h4>
+            <a target="_blank" href="https://www.facebook.com/nyttcorg"><i style="color: #1877f2;"
+                    class="fa-brands fa-square-facebook"></i></a>
+            <a target="_blank" href=""><i style="color: #8e09ed;" class="fa-brands fa-square-instagram"></i></a>
+            <a target="_blank" href=""><i style="color: #0a66c2;" class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCtMT6d2O6Q6WMfEj_hbhW6g"><i
+                    style="color: #ff0000;" class="fa-brands fa-youtube"></i></a>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <!-- meet the team -->
+    <script src="./Font-Awesome/all.min.js"></script>
+    <!-- meet the team -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8032cc4f9d.js" crossorigin="anonymous"></script>
+</body>
+<footer style="display: flex;">
+    <div>
+        <a href="#"><img style="width: 60px; padding-top: 10px; margin-left: 20px; margin-right: 340px;"
+                src="images/National Youth _ Technical Training Center-logo.png" alt="site_logo"></a>
+    </div>
+    <div>
+        <p style="padding-top: 20px; margin-top: 5px;">Coopyright &copy; National Youth & Technical Training Center |
+            2023</p>
+        <p style="font-size: 13px;">Developed by | NYTTC IT Department</p>
+    </div>
+</footer>
+
+</html>

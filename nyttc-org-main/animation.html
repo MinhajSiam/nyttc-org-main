@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: #790909;
+                left: 0px;
+                top: 0;
+            }
+
+            25% {
+                top: 200px;
+                background-color: #787909;
+            }
+
+            50% {
+                top: 0;
+                background-color: #097916;
+            }
+
+            75% {
+                top: 200px;
+                background-color: #090d79;
+            }
+
+            100% {
+                background-color: #790969;
+                left: 450px;
+                top: 0;
+            }
+        }
+
+        .stage {
+            height: 250px;
+            width: 500px;
+            /* background-color: lightsalmon; */
+            position: relative;
+            left: 400px;
+            top: 200px;
+        }
+
+        .ball {
+            background-color: lightseagreen;
+            border-radius: 50%;
+            animation: sliding 3s ease-in-out 0.2s infinite alternate;
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="ball">
+            <img src="images/National Youth _ Technical Training Center-logo.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
