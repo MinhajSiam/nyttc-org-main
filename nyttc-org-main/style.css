@@ -832,6 +832,7 @@ q {
 .profile-card:hover {
     border-radius: 10px;
     height: 260px;
+    cursor: pointer;
 }
 
 .profile-card .img {
