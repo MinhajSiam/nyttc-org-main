@@ -16,14 +16,20 @@
             margin-top: 980px;
             border-radius: 5px;
             margin-left: 53px;
+            transition: 0.2s ease;
+        }
+
+        .ad-banner:hover {
+            background-color: rgb(196, 196, 196);
+            cursor: pointer;
         }
 
         .ad-banner .text {
             text-align: center;
             /* align-items: center; */
             /* justify-content: center; */
-            margin-top: 30px;
-            font-size: 30px;
+            margin-top: 2px;
+            font-size: 40px;
             color: red;
         }
     </style>
@@ -31,12 +37,14 @@
 
 <body>
 
-    <div class="ad-banner">
-        <div class="text">
-            <h1>50%</h1>
-            <h2>Discount</h2>
+    <a href="#">
+        <div class="ad-banner">
+            <div class="text">
+                <h1>50%</h1>
+                <h2>Discount</h2>
+            </div>
         </div>
-    </div>
+    </a>
 
     <!-- Navbar -->
     <div style="margin-top: -150px;" class="top-header">
