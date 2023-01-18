@@ -5,61 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation</title>
+    <title>Login Form</title>
     <style>
-        @keyframes sliding {
-            0% {
-                background-color: #790909;
-                left: 0px;
-                top: 0;
-            }
-
-            25% {
-                top: 200px;
-                background-color: #787909;
-            }
-
-            50% {
-                top: 0;
-                background-color: #097916;
-            }
-
-            75% {
-                top: 200px;
-                background-color: #090d79;
-            }
-
-            100% {
-                background-color: #790969;
-                left: 450px;
-                top: 0;
-            }
+        .login-form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 60%;
+            padding: 20px 0 200px 0;
         }
 
-        .stage {
-            height: 250px;
-            width: 500px;
-            /* background-color: lightsalmon; */
-            position: relative;
-            left: 400px;
-            top: 200px;
+        input {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 5px 10px;
         }
 
-        .ball {
-            background-color: lightseagreen;
-            border-radius: 50%;
-            animation: sliding 3s ease-in-out 0.2s infinite alternate;
-            position: relative;
+        input[type="submit"] {
+            border: 0;
+            background-color: goldenrod;
+            color: whitesmoke;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
 
+        body {
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            width: 350px;
+            border-radius: 5px;
+            background: #ececec;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        a {
+            text-decoration: none;
+            color: slateblue;
         }
     </style>
 </head>
 
 <body>
-    <div class="stage">
-        <div class="ball">
-            <img src="images/National Youth _ Technical Training Center-logo.png" alt="">
-        </div>
+    <div class="container">
+        <form class="login-form">
+            <h2>Please Login</h2>
+            <input type="email" name="" id="" placeholder="Email" required>
+            <input type="password" name="" id="" placeholder="Password" required>
+            <input type="submit" value="Submit">
+            <a href="">
+                <p>Reset Password</p>
+            </a>
+        </form>
     </div>
 </body>
 
