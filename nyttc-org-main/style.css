@@ -352,6 +352,7 @@ footer {
     text-align: center;
     height: 90px;
     background-color: #06031b;
+    margin-top: 150px;
 }
 
 footer p {
@@ -423,7 +424,7 @@ footer p {
 }
 
 .course-outline {
-    margin-left: 10px;
+    margin-left: 30px;
     border: 1px solid gray;
     border-radius: 7px;
 }
@@ -954,5 +955,17 @@ q {
 }
 
 .imp-links:hover {
+    color: #1c949e;
+}
+
+.course-outline ul li {
+    list-style-type: none;
+}
+
+.fa-book {
+    color: #7067f5;
+}
+
+.fa-microship {
     color: #1c949e;
 }
