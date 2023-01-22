@@ -1,10 +1,16 @@
-function ageInDays(age) {
-    return age * 365;
-}
+// function ageInDays(age) {
+//     return age * 365;
+// }
 
-console.log(ageInDays(30)); // Output: 10950
-function ageInDays(age) {
-    return age * 365 + Math.floor(age / 4);
-}
+// console.log(ageInDays(30)); // Output: 10950
+// function ageInDays(age) {
+//     return age * 365 + Math.floor(age / 4);
+// }
 
-console.log(ageInDays(30)); // Output: 11023
+// console.log(ageInDays(30)); // Output: 11023
+
+<script>
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        })
+</script>
