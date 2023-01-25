@@ -352,7 +352,7 @@ footer {
     text-align: center;
     height: 90px;
     background-color: #06031b;
-    margin-top: 150px;
+    margin-top: 750px;
 }
 
 footer p {
@@ -440,12 +440,12 @@ footer p {
 
 .what-learn {
     /* border: 1px solid gray; */
-    border-radius: 20px;
+    border-radius: 15px;
     /* margin: 80px 30px 40px 30px; */
     padding: 20px;
     width: 90%;
     margin: 50px 0 50px 50px;
-    box-shadow: 10px 10px 30px gray;
+    box-shadow: 15px 15px 60px lightgray;
     /* border-radius: 50px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
     box-shadow: 20px 20px 60px #bebebe,
