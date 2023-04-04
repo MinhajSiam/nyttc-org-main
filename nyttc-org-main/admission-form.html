@@ -7,6 +7,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission Form</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 200vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .container .title {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .container .title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        .content form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+
+        form .user-details .input-box {
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+
+        form .input-box span.details {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .user-details .input-box input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .user-details .input-box input:focus,
+        .user-details .input-box input:valid {
+            border-color: #9b59b6;
+        }
+
+        form .gender-details .gender-title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        form .category {
+            display: flex;
+            width: 80%;
+            margin: 14px 0;
+            justify-content: space-between;
+        }
+
+        form .category label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        form .category label .dot {
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background: #d9d9d9;
+            border: 5px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        #dot-1:checked~.category label .one,
+        #dot-2:checked~.category label .two,
+        #dot-3:checked~.category label .three {
+            background: #9b59b6;
+            border-color: #d9d9d9;
+        }
+
+        form input[type="radio"] {
+            display: none;
+        }
+
+        form .button {
+            height: 45px;
+            margin: 35px 0
+        }
+
+        form .button input {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        form .button input:hover {
+            /* transform: scale(0.99); */
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+
+        @media(max-width: 584px) {
+            .container {
+                max-width: 100%;
+            }
+
+            form .user-details .input-box {
+                margin-bottom: 15px;
+                width: 100%;
+            }
+
+            form .category {
+                width: 100%;
+            }
+
+            .content form .user-details {
+                max-height: 300px;
+                overflow-y: scroll;
+            }
+
+            .user-details::-webkit-scrollbar {
+                width: 5px;
+            }
+        }
+
+        @media(max-width: 459px) {
+            .container .content .category {
+                flex-direction: column;
+            }
+        }
+
+        .dropdown {
+            width: 300px;
+            height: 45px;
+            padding: 5px;
+            font-size: 15px;
+            font-weight: 400;
+            color: #747474;
+        }
+    </style>
+    <!-- <style>
         .login-form {
             display: flex;
             justify-content: center;
@@ -76,10 +258,11 @@
             background-color: goldenrod;
             color: #ececec;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
+
     <!-- <div class="container-main">
         <div class="container">
             <form class="login-form">
@@ -93,27 +276,147 @@
             </form>
         </div>
     </div> -->
-    <section class="login-container">
+    <!-- <section class="login-container">
         <form class="login-form-2">
-            <h2>Admission Form</h2>
-            <input type="email" name="" id="" placeholder="Enter your full name" required>
-            <input type="email" name="" id="" placeholder="Father's name" required>
-            <input type="email" name="" id="" placeholder="Mother's name" required>
-            <input type="email" name="" id="" placeholder="Present Address" required>
-            <input type="email" name="" id="" placeholder="Permanent Address" required>
-            <input type="email" name="" id="" placeholder="Phone Number" required>
+            <h1>Admission Form</h1>
+            <input type="text" name="" id="" placeholder="Enter your full name" required>
+            <input type="text" name="" id="" placeholder="Father's name" required>
+            <input type="text" name="" id="" placeholder="Mother's name" required>
+            <input type="text" name="" id="" placeholder="Present Address" required>
+            <input type="text" name="" id="" placeholder="Permanent Address" required>
+            <input type="text" name="" id="" placeholder="Phone Number" required>
             <input type="email" name="" id="" placeholder="Email Address" required>
-            <input type="email" name="" id="" placeholder="Occupation" required>
-            <input type="email" name="" id="" placeholder="Blood Group" required>
-            <input type="email" name="" id="" placeholder="Course Name" required>
-            <input type="email" name="" id="" placeholder="Course Duration" required>
-            <input type="email" name="" id="" placeholder="User Name" required>
+            <input type="text" name="" id="" placeholder="Occupation" required>
+            <input type="text" name="" id="" placeholder="Blood Group" required>
+            <input type="text" name="" id="" placeholder="Course Name" required>
+            <input type="text" name="" id="" placeholder="Course Duration" required>
+            <input type="text" name="" id="" placeholder="User Name" required>
             <input type="password" name="" id="" placeholder="Password" required>
             <input type="password" name="" id="" placeholder="Confirm Password" required>
-            <input type="password" name="" id="" placeholder="bKash/Nagad/Rocket Transection ID" required>
-            <input type="password" name="" id="" placeholder="Course Fee" required>
+            <input type="text" name="" id="" placeholder="bKash/Nagad/Rocket Transection ID" required>
+            <input type="text" name="" id="" placeholder="Course Fee" required>
             <input type="submit" value="Submit">
         </form>
-    </section>
+    </section> -->
+
+    <section>
+        <div class="container">
+            <div style="display: inline-block;" class="title">
+                <img style="width: 80px;" src="images/National Youth _ Technical Training Center-logo.png" alt="">
+                <h3 style="text-align: center;">Registration
+                    Form</h3>
+            </div>
+            <div class="content">
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Full Name</span>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Father's Name</span>
+                            <input type="text" placeholder="Enter your Father's name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Mother's Name</span>
+                            <input type="text" placeholder="Enter your Mother's name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Present Address</span>
+                            <input type="text" placeholder="Enter your Mother's name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Permanent Address</span>
+                            <input type="text" placeholder="Enter your Mother's name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="text" placeholder="Enter your number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Occupation</span>
+                            <input type="text" placeholder="Occupation" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Blood Group</span>
+                            <!-- <input type="text" placeholder="Blood Group" required> -->
+                            <select class="dropdown" name="" id="">
+                                <option selected disabled value="">Choose one</option>
+                                <option value="A+">A+</option>
+                                <option value="B+">B+</option>
+                                <option value="AB+">AB+</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="A-">A-</option>
+                                <option value="B-">B-</option>
+                                <option value="AB-">AB-</option>
+                            </select required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Course Name</span>
+                            <!-- <input type="text" placeholder="Course Name" required> -->
+                            <select class="dropdown" name="" id="">
+                                <option selected disabled value="Choose a course">Choose a course</option>
+                                <option value="2">Computer Office Course (3 Months)</option>
+                                <option value="3">Office Advanced Certificate Course (3 Months)</option>
+                                <option value="3">Office Advanced Certificate Course (6 Months)</option>
+                                <option value="3">Professional Graphics Design (3 Months)</option>
+                                <option value="3">Professional Graphics Design (6 Months)</option>
+                                <option value="3">Computer Graphic Design (3 Months)</option>
+                                <option value="3">Digital Marketing (6 Months)</option>
+                                <option value="3">Diploma in Computer Science (6 Months)</option>
+                                <option value="3">Diploma in Computer Science (12 Months)</option>
+                                <option value="3">Web Design & Development (6 Months)</option>
+                                <option value="3">Diploma in Office Management & Graphic Design (6 Months)</option>
+                                <option value="3">Spoken English (3 Months)</option>
+                            </select required>
+                        </div>
+                        <!-- <div class="input-box">
+                            <span class="details">Course Duration</span>
+                            <input type="text" placeholder="Course Duration" required>
+                        </div> -->
+                        <div class="input-box">
+                            <span class="details">Course fee</span>
+                            <input type="text" placeholder="Course fee" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Transection ID</span>
+                            <input type="text" placeholder="Transection ID" required>
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Male</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">Prefer not to say</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
+</section>
 
 </html>
