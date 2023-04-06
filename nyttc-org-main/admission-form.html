@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <title>Admission Form</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -16,12 +18,16 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        body {
-            height: 200vh;
+        .body {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 10px;
+        }
+
+        body {
+            padding: 10px;
+            height: 160vh;
             background: linear-gradient(135deg, #71b7e6, #9b59b6);
         }
 
@@ -38,6 +44,8 @@
             font-size: 25px;
             font-weight: 500;
             position: relative;
+            /* display: grid;
+            grid-column-start: 2; */
         }
 
         .container .title::before {
@@ -46,7 +54,7 @@
             left: 0;
             bottom: 0;
             height: 3px;
-            width: 30px;
+            width: 635px;
             border-radius: 5px;
             background: linear-gradient(135deg, #71b7e6, #9b59b6);
         }
@@ -262,6 +270,7 @@
 </head>
 
 <body>
+    <button type="button" class="btn btn-outline-light" style="padding: 3px 20px;">Light</button>
 
     <!-- <div class="container-main">
         <div class="container">
@@ -299,11 +308,11 @@
         </form>
     </section> -->
 
-    <section>
+    <section class="body">
         <div class="container">
             <div style="display: inline-block;" class="title">
                 <img style="width: 80px;" src="images/National Youth _ Technical Training Center-logo.png" alt="">
-                <h3 style="text-align: center;">Registration
+                <h3 style="text-align: center;">Admission
                     Form</h3>
             </div>
             <div class="content">
@@ -414,9 +423,10 @@
                 </form>
             </div>
         </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/54a16c130a.js" crossorigin="anonymous"></script>
 </body>
 
-</html>
-</section>
 
 </html>
