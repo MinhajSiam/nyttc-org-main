@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/54a16c130a.js" crossorigin="anonymous"></script>
     <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
         .login-container {
             display: flex;
             justify-content: center;
@@ -37,11 +50,15 @@
 
     <head>
         <nav>
-            <a href="">Home</a>
-            <a href="">Dashboard</a>
-            <a href="">Team</a>
-            <a href=""></a>
-            <a href=""></a>
+            <span>
+                <a href="">Home</a>
+                <a href="">Dashboard</a>
+                <a href="">Team</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-right-to-bracket"></i></a>
+            </span>
         </nav>
     </head>
     <section class="login-container">
