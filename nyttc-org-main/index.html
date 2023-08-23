@@ -41,6 +41,55 @@
 // Testimonial Section
 
     </script>
+    <style>
+        /* (A) FIXED WRAPPER */
+        .hwrap {
+            overflow: hidden;
+            /* HIDE SCROLL BAR */
+            background: yellow;
+            border: 2px solid #06031b;
+            position: sticky;
+            top: 90px;
+            z-index: 3;
+        }
+
+        /* (B) MOVING TICKER WRAPPER */
+        .hmove {
+            display: flex;
+        }
+
+        /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+        .hitem {
+            flex-shrink: 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+            color: red;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+        /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+        @keyframes tickerh {
+            0% {
+                transform: translate3d(70%, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(-400%, 0, 0);
+            }
+        }
+
+        .hmove {
+            animation: tickerh linear 60s infinite;
+        }
+
+        .hmove:hover {
+            animation-play-state: paused;
+        }
+    </style>
 </head>
 
 <body>
@@ -64,6 +113,15 @@
             </nav>
         </header>
     </div>
+
+    <!-- Ticker -->
+    <div class="hwrap">
+        <div class="hmove">
+            <div class="hitem">Notice</div>
+        </div>
+    </div>
+    <!-- Ticker -->
+
     <section>
         <div class="top-banner">
             <!-- <img class="top-banner" src="images/top-banner.jpg" alt=""> -->
@@ -342,19 +400,19 @@
             <h4 style="margin-bottom: 20px;">Address</h4>
             <ul>
                 <i class="fa-solid fa-location-dot"></i>
-                <li style="margin-top: 10px;">Shonir Akhra<br>Barnamala School Road<br>
+                <li style="margin-top: 10px;">11, Nayapara, Shonir Akhra<br>Barnamala School Road<br>
                     Jatrabari, Dhaka-1236</li>
                 <br>
                 <i class="fa-solid fa-phone"></i>
-                <li>016 8986 0198</li>
-                <li>017 1073 3525</li>
+                <li>+88016 8986 0198</li>
+                <li>+88017 1073 3525</li>
                 <br>
                 <i class="fa-solid fa-envelope"></i>
                 <li>nyttcorg@gmail.com</li>
                 <li>admin@nyttc.org</li>
             </ul>
         </div>
-        <div class="map">
+        <div cl ass="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2589770134878!2d90.4467014500153!3d23.702444096449273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9cbbd45379f%3A0x7e3efacf50aa13ce!2sNational%20Youth%20%26%20Technical%20Training%20Center!5e0!3m2!1sen!2sbd!4v1673104901639!5m2!1sen!2sbd"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"

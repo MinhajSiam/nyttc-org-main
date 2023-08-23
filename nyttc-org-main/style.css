@@ -13,7 +13,7 @@ body {
     height: auto;
     min-width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 header {
@@ -841,7 +841,7 @@ q {
     width: 100%;
     height: 100%;
     transition: .6s;
-    z-index: 99;
+    z-index: 1;
 }
 
 .profile-card:hover .img {

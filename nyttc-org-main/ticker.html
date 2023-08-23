@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* (A) FIXED WRAPPER */
+        .hwrap {
+            overflow: hidden;
+            /* HIDE SCROLL BAR */
+            background: yellow;
+            border: 2px solid #06031b;
+        }
+
+        /* (B) MOVING TICKER WRAPPER */
+        .hmove {
+            display: flex;
+        }
+
+        /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+        .hitem {
+            flex-shrink: 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+            color: red;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+        /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+        @keyframes tickerh {
+            0% {
+                transform: translate3d(70%, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(-400%, 0, 0);
+            }
+        }
+
+        .hmove {
+            animation: tickerh linear 60s infinite;
+        }
+
+        .hmove:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ticker -->
+    <div class="hwrap">
+        <div class="hmove">
+            <div class="hitem">Notice</div>
+        </div>
+    </div>
+</body>
+
+</html>
