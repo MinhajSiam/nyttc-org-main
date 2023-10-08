@@ -306,12 +306,12 @@ nav ul li a:hover {
     text-decoration: none;
     color: #000;
     transition: 0.2s ease-in;
-    border: 2px solid #06031b;
+    border: 2px solid #028893;
 }
 
 .course-width a:hover {
     color: #fff;
-    background-color: #06031b;
+    background-color: #028893;
     /* border-radius: 50px;
     background: #e0e0e0;
     box-shadow: 20px 20px 60px #bebebe,
